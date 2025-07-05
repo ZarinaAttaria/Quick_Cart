@@ -1,0 +1,31 @@
+.pagination {
+  padding: 10px;
+}
+
+.pagination_button {
+  background-color: white !important;
+  border: none;
+}
+.arrowIcon {
+  color: black;
+  width: 90%;
+  height: 20px;
+}
+.pagination_button:disabled .arrowIcon {
+  color: #6a6767;
+  cursor: not-allowed;
+}
+
+.pagination_button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pagination_button svg {
+  margin: 0 5px;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 1.1em;
+  color: #333;
+}

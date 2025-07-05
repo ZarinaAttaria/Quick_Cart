@@ -1,0 +1,224 @@
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.navbar-toggler {
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  height: 60px;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.pagination_button {
+  background-color: black !important;
+  color: white !important;
+}
+
+.dropdown_Btn {
+  background-color: rgb(61, 58, 58) !important;
+  color: white !important;
+  height: 5% !important;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.sort-btn {
+  margin: 5px;
+  width: 180px;
+  height: 40px;
+  background-color: rgb(24, 170, 180);
+}
+
+.dropdown-menu {
+  background-color: black;
+  color: white;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.search_Btn {
+  background-color: darkgreen !important;
+  color: white;
+}
+
+.search_Btn:hover {
+  background-color: rgb(183, 179, 179) !important;
+  color: black;
+}
+
+.HomeLink:hover {
+  color: rgb(53, 198, 234);
+}
+
+.navbar-brand:hover {
+  color: rgb(53, 198, 234);
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.productPrice {
+  color: green;
+  margin-top: 10px;
+}
+
+.cartIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.badge .ant-badge-count {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  transform: translate(50%, -50%);
+}
+
+.cartIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.totalPrice,
+.product-price {
+  color: green;
+}
+
+.cartSummary {
+  margin-top: 20px;
+}
+
+.sortIcon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.productDetailButton {
+  background-color: rgb(53, 198, 234);
+  width: 60%;
+}
+.AddToCartBtn {
+  background-color: rgb(103, 193, 14);
+  width: 60%;
+}
+.removeFromCartBtn {
+  background-color: rgb(197, 17, 17);
+}
+.filter_Dropdown {
+  margin: 10px;
+  background-color: cadetblue;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .navbar {
+    width: 100%;
+  }
+}
